@@ -1,0 +1,29 @@
+Flutter engine, which is mostly written in C++
+Flutter framework writtenin Dart
+
+রিলিজ এর সময় ফ্লাটার  এপ্প ডাইরেক্টলি মেশিন কোড এ কনভার্ট হয় এবং ওয়েব এর ক্ষেত্রে জাভাস্ক্রিপ্ট কোড এ কনভার্ট হয়। 
+** how flutter transform to native apps
+   - flutter sdk dart code take native code a convert kore
+   
+** flutter architecture
+   - no drag & drop  
+
+   
+ ডেভেলপমেন্ট এর সময় ফ্লাটার এর হট রিলোড ফীচার টি আমরা use করতে পারি, এতে করে আমাদের এপ্লিকেশন টি
+scratch থেকে recompile করতে হয় না।   
+    Hot reload- 
+	rebuilds the widget tree,
+	preserving the app state;
+	it doesn't return main() or initState().
+
+    Hot restart loads code changes into the VM, and restarts the Flutter app, 
+	losing the app state.
+
+    Full restart- recompile hoi
+
+ruApp - runApp টা আমাদের এপ্লিকেশন এর এন্ট্রি পয়েন্ট 
+material app: materialapp হচ্ছে ফ্লাটার এর একটি প্রিডিফাইনড ক্লাস।  ফ্লাটার এর কোর component গুলোর মধ্যে এটি একটি। 
+              materialapp এই কম্পোনেন্ট এর মাধ্যমে আমরা বাকি widget
+                                   গুলোকে এক্সেস করতে পারি। ইটা গুগল এর material style guideline টাকে ফলো করে। 
+scaffold: 								 
+body: আমাদের scaffold এর প্রাইমারি কনটেন্ট 
